@@ -9,7 +9,7 @@ Hiring Coders's program
 ### Descrição: 
 
 <p> Projeto de contabilização e visualização de pontos por compra criado para o e-commerce VTEX da dona Maria.</p>
-<p> Temos como foco nesse projeto retornar os pedidos do usuário diretamente da nossa api conectada á VTEX, para assim criar um histórico de transações entre o cliente e a loja que também seja capaz de retornar o total de pontos bônus em um bloco customizável.</p>
+<p> Temos como foco nesse projeto retornar os pedidos do usuário diretamente da nossa api conectada á VTEX, para assim criar um histórico de transações entre o cliente e a loja que também seja capaz de retornar o total de pontos bônus em um bloco customizável. A pontuação está sendo efetuada para o usuário autenticado.</p>
 
 <hr>
 
