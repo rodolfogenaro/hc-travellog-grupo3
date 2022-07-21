@@ -1,0 +1,109 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#category-pc",
+	  "menu-item#category-notebook",
+      "menu-item#more"
+    ]
+  },
+  "menu-item#category-pc": {
+    "props": {
+      "id": "menu-item-category-pc",
+	  "blockClass": "pc",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pc?_q=pc&map=ft",
+        "noFollow": false,
+        "tagTitle": "PCs",
+        "text": "PCs"
+      }
+    }
+  },
+  "menu-item#category-notebook": {
+    "props": {
+      "id": "menu-item-category-notebook",
+	  "blockClass": "notebook",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebook?_q=notebook&map=ft",
+        "noFollow": false,
+        "tagTitle": "Notebooks",
+        "text": "Notebooks"
+      }
+    }
+  },
+  "menu-item#more": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Mais",
+        "text": "Mais"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#more"
+    ]
+  },
+  "vtex.menu@2.x:submenu#more": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-more"
+    ]
+  },
+  "flex-layout.row#menu-more": {
+    "children": [
+      "flex-layout.col#menu-more-1",
+      "flex-layout.col#menu-more-2"
+    ]
+  },
+  "flex-layout.col#menu-more-1": {
+    "children": [
+      "vtex.menu@2.x:menu#more"
+    ]
+  },
+  "flex-layout.col#menu-more-2": {
+    "children": [
+    ]
+  },
+  "vtex.menu@2.x:menu#more": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#about-us"
+    ]
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+	  "blockClass": "about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Sobre nós",
+        "text": "Sobre nós"
+      }
+    }
+  }
+}

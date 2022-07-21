@@ -1,0 +1,155 @@
+{
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical",
+	  "blockClass": "footer-row"
+    },
+    "children": [
+      "menu-item#news",
+      "menu-item#blackfriday",
+      "menu-item#sale",
+      "menu-item#personalization"
+    ]
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-news",
+	  "blockClass": "news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "News"
+      }
+    }
+  },
+  "menu-item#blackfriday": {
+    "props": {
+      "id": "menu-item-black-friday",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "BlackFriday",
+        "text": "Black Friday"
+      }
+    }
+  },
+  "menu-item#sale": {
+    "props": {
+      "id": "menu-item-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    }
+  },
+  "menu-item#personalization": {
+    "props": {
+      "id": "menu-item-personalization",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Personalization",
+        "text": "Personalization"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-pc": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#pc",
+      "menu-item#notebook"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#pc-mobile"
+    ]
+  },
+
+  "menu-item#pc-mobile": {
+    "props": {
+      "id": "menu-item-category-pc",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pc?_q=pc&map=ft",
+        "noFollow": true,
+        "tagTitle": "PCs",
+        "text": "PCs"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#pc"]
+  },
+  "vtex.menu@2.x:submenu.accordion#pc": {
+    "children": ["vtex.menu@2.x:menu#pc-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#pc-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#notebook"
+    ]
+  },
+
+  "menu-item#pc": {
+    "props": {
+      "id": "menu-item-category-pc",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pc?_q=pc&map=ft",
+        "noFollow": true,
+        "tagTitle": "PCs",
+        "text": "PCs"
+      }
+    }
+  },
+
+  "menu-item#notebook": {
+    "props": {
+      "id": "menu-item-notebook",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/notebook?_q=notebook&map=ft",
+        "noFollow": false,
+        "tagTitle": "Notebooks",
+        "text": "Notebooks"
+      }
+    }
+  }
+}
